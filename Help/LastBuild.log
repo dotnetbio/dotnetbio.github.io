@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2015.7.25.0" projectFile="C:\git\bio\src\documentation.shfbproj" started="8/2/2015 6:02:18 PM">
+<buildStep step="Initializing">
+Finding tools...
+The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
+Locating components in the following folder(s):
+    C:\git\bio\src
+    C:\ProgramData\EWSoftware\Sandcastle Help File Builder\Components and Plug-Ins\
+    C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\
+Framework reflection data location: C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework
+Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
+Loading and initializing plug-ins...
+Lightweight Website Style Version 2015.7.25.0
+Copyright &#169; 2006-2015, Eric Woodruff, All Rights Reserved
+Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+-------------------------------
+Clearing any prior web/markdown output...
+</buildStep>
+<buildStep step="ValidatingDocumentationSources">
+Validating and copying documentation source information
+Source: C:\git\bio\src\Source\Framework\Bio.Core\Bio.Core.csproj
+    Found project &#39;C:\git\bio\src\Source\Framework\Bio.Core\Bio.Core.csproj&#39;
+
+Parsing project files
+    Found assembly &#39;C:\git\bio\src\Source\Framework\Bio.Core\bin\Release\Bio.Core.dll&#39;
+SHFB: Warning BE0007: A project with a different or higher framework version was found.  Changing project FrameworkVersion property from &#39;.NET Framework 4.5&#39; to &#39;.NET Portable Library 4.5&#39; for the build.
+
+Copying XML comments files
+    C:\git\bio\src\Source\Framework\Bio.Core\bin\Release\Bio.Core.XML -&gt; C:\git\bio\src\Help\Working\Bio.Core.XML
+</buildStep>
+<buildStep step="GenerateSharedContent">
+Generating shared content files (en-US, English (United States))...
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+</plugIn>    Last step completed in 00:00:00.0030
+</buildStep>
+<buildStep step="GenerateApiFilter">
+Generating API filter for MRefBuilder...
+    Last step completed in 00:00:00.0300
+</buildStep>
+<buildStep step="GenerateReflectionInfo">
+Generating reflection information...
+[C:\windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateRefInfo.proj]
+Build started 8/2/2015 6:02:21 PM.
+Project &quot;C:\git\bio\src\Help\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
+PrepareForBuild:
+  Creating directory &quot;obj\Debug\&quot;.
+GenerateRefInfo:
+  MRefBuilder (v2015.7.25.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2015, Eric Woodruff, All Rights Reserved.
+  Loaded 1 assemblies for reflection and 0 dependency assemblies.
+  Wrote information on 45 namespaces, 400 types, and 3698 members
+  Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
+  XslTransform (v2015.7.25.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2015, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
+Done Building Project &quot;C:\git\bio\src\Help\Working\GenerateRefInfo.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.63
+    Last step completed in 00:00:03.0372
+</buildStep>
+<buildStep step="TransformReflectionInfo">
+Transforming reflection output...
+[C:\windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - TransformManifest.proj]
+Build started 8/2/2015 6:02:24 PM.
+Project &quot;C:\git\bio\src\Help\Working\TransformManifest.proj&quot; on node 1 (default targets).
+TransformManifest:
+  XslTransform (v2015.7.25.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2015, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\ApplyVSDocModel.xsl&#39;.
+  Copying file from &quot;reflection.xml&quot; to &quot;reflection.nofilenames&quot;.
+  XslTransform (v2015.7.25.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2015, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\AddFilenames.xsl&#39;.
+  XslTransform (v2015.7.25.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2015, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
+Done Building Project &quot;C:\git\bio\src\Help\Working\TransformManifest.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.56
+    Last step completed in 00:00:02.9492
+</buildStep>
+<buildStep step="GenerateNamespaceSummaries">
+Generating namespace summary information...
+    Last step completed in 00:00:00.2190
+</buildStep>
+<buildStep step="CopyAdditionalContent">
+Copying additional content files...
+No additional content to copy
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="MergeTablesOfContents">
+Merging conceptual and additional tables of contents...
+    Last step completed in 00:00:00.0010
+</buildStep>
+<buildStep step="GenerateIntermediateTableOfContents">
+Generating intermediate table of contents file...
+[C:\windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - GenerateIntermediateTOC.proj]
+Build started 8/2/2015 6:02:27 PM.
+Project &quot;C:\git\bio\src\Help\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
+GenerateIntermediateTOC:
+  XslTransform (v2015.7.25.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2015, Eric Woodruff, All Rights Reserved.
+  Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
+Done Building Project &quot;C:\git\bio\src\Help\Working\GenerateIntermediateTOC.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.06
+Generating conceptual content intermediate TOC file...
+    Last step completed in 00:00:01.4601
+</buildStep>
+<buildStep step="CreateBuildAssemblerConfigs">
+Creating Sandcastle configuration files...
+    sandcastle.config
+    Last step completed in 00:00:00.1300
+</buildStep>
+<buildStep step="MergeCustomConfigs">
+Merging custom build component configurations
+C:\git\bio\src\Help\Working\sandcastle.config
+    Last step completed in 00:00:00.0020
+</buildStep>
+<buildStep step="BuildReferenceTopics">
+Building reference help topics...
+[C:\windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - BuildReferenceTopics.proj]
+Build started 8/2/2015 6:02:28 PM.
+Project &quot;C:\git\bio\src\Help\Working\BuildReferenceTopics.proj&quot; on node 1 (default targets).
+BuildReferenceTopics:
+  BuildAssembler (v2015.7.25.0)
+  Copyright c 2006-2015, Microsoft Corporation, All Rights Reserved.
+  Portions Copyright c 2006-2015, Eric Woodruff, All Rights Reserved.
+  Loading configuration...
+  Processing topics...
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.AATree`1.InOrderTraversal] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.AATree`1.PostOrderTraversal] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.AATree`1.PreOrderTraversal] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.AATree`2.InOrderTraversal] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.AATree`2.PostOrderTraversal] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.AATree`2.PreOrderTraversal] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Alphabets.GetAmbiguousAlphabet(Bio.IAlphabet)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Bio.BigArray`1] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.BigArray`1.GetEnumerator] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.BigList`1.GetEnumerator] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.DerivedSequence.GetComplementedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.DerivedSequence.GetReverseComplementedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.DerivedSequence.GetReversedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.DerivedSequence.ToString] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.DnaAlphabet.GetAmbiguousSymbols] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.DnaAlphabet.GetSymbolValueMap] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IAlphabet.GetAmbiguousSymbols] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IAlphabet.GetSymbolValueMap] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IAlphabet.GetValidSymbols] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IQualitativeSequence.GetEncodedQualityScores] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.ISequence.GetComplementedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.ISequence.GetReverseComplementedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.ISequence.GetReversedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Bio.MetadataListItem`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Bio.PlatformManager.Services] Unknown reference link target &#39;T:Bio.Platform.Helpers.PlatformServices&#39;. [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.ProteinAlphabet.GetAmbiguousSymbols] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.ProteinAlphabet.GetSymbolValueMap] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.ConvertEncodedQualityScore(Bio.FastQFormatType,Bio.FastQFormatType,System.Byte)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.ConvertEncodedQualityScore(Bio.FastQFormatType,Bio.FastQFormatType,System.Byte[])] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.ConvertQualityScore(Bio.FastQFormatType,Bio.FastQFormatType,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.ConvertQualityScores(Bio.FastQFormatType,Bio.FastQFormatType,System.Int32[])] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.ConvertQualityScores(Bio.FastQFormatType,Bio.FastQFormatType,System.SByte[])] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.ConvertTo(Bio.FastQFormatType)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.GetComplementedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.GetEncodedQualityScores] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.GetPhredQualityScores] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.GetQualityScore(System.Int64)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.GetQualityScore(System.Int64)] Missing &lt;param name=&quot;index&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.GetQualityScores] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.GetReverseComplementedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.GetReversedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.GetSolexaQualityScores] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.QualitativeSequence.ToString] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.RnaAlphabet.GetAmbiguousSymbols] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.RnaAlphabet.GetSymbolValueMap] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Sequence.GetComplementedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Sequence.GetReverseComplementedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Sequence.GetReversedSequence] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Sequence.ToString] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.SnpItem.GetHashCode] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.StringListValidator.AddValidValues(System.String[])] Missing &lt;param name=&quot;values&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.Alignment] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAligner.CreateAffineAlignmentJob(Bio.ISequence,Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAligner.CreateSimpleAlignmentJob(Bio.ISequence,Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;similarityMatrix&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;gapOpenCost&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;gapExtensionCost&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;aInput&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;bInput&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.Align] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;weightFunction&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.optScore] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Bio.Algorithms.Alignment.MultiSequenceAlignment] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.MultiSequenceAlignment.#ctor(System.Collections.Generic.IList{Bio.ISequence})] Missing &lt;param name=&quot;sequences&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.Algorithms.Alignment.MultiSequenceAlignment.MsaScore] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.MultiSequenceAlignment.MultipleAlignmentScoreFunction(System.Collections.Generic.List{Bio.ISequence},Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.Algorithms.Alignment.MultiSequenceAlignment.NumberOfColumns] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.Algorithms.Alignment.MultiSequenceAlignment.NumberOfSequences] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.MultiSequenceAlignment.PairWiseScoreFunction(Bio.ISequence,Bio.ISequence,Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.Algorithms.Alignment.MultiSequenceAlignment.Sequences] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.NUCmer.#ctor(Bio.Algorithms.SuffixTree.ISuffixTree)] Missing &lt;param name=&quot;suffixTree&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.NUCmer.#ctor(Bio.ISequence)] Missing &lt;param name=&quot;referenceSequence&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.NucmerPairwiseAligner.Align(Bio.ISequence,System.Collections.Generic.IEnumerable{Bio.ISequence})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.NucmerPairwiseAligner.Align(System.Collections.Generic.IEnumerable{Bio.ISequence})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.NucmerPairwiseAligner.Align(System.Collections.Generic.IEnumerable{Bio.ISequence},System.Collections.Generic.IEnumerable{Bio.ISequence})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAffineAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;similarityMatrix&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAffineAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;gapOpenCost&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAffineAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;gapExtensionCost&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAffineAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;aInput&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAffineAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;bInput&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAffineAlignmentJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;weightFunction&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAffineAlignmentJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;blockRow&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAffineAlignmentJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;blockCol&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAffineAlignmentJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;lastRow&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAffineAlignmentJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;lastCol&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAligner.CreateAffineAlignmentJob(Bio.ISequence,Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapAligner.CreateSimpleAlignmentJob(Bio.ISequence,Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;similarityMatrix&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;gapOpenCost&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;aInput&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;bInput&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;similarityMatrix&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;gapOpenCost&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;gapExtensionCost&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;aInput&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.#ctor(Bio.SimilarityMatrices.SimilarityMatrix,System.Int32,System.Int32,Bio.ISequence,Bio.ISequence)] Missing &lt;param name=&quot;bInput&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;weightFunction&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;blockRow&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;blockCol&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;lastRow&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseOverlapSimpleAlignmentJob.ComputeBlock(Bio.Algorithms.Alignment.DynamicProgrammingPairwiseAlignerJob.WeightFunction,System.Int32,System.Int32,System.Int32,System.Int32)] Missing &lt;param name=&quot;lastCol&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Alignment.PairwiseSequenceAligner.CreateTracebackTable] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.Assembly] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.Assembly.Comparative] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Comparative.LayoutRefiner.RefineLayout(Bio.Util.DeltaAlignmentCollection)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.Assembly.Graph] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.BinaryTreeOfDebrujinNodes.GetNodes] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.DeBruijnGraph.GetUnvisitedNodes] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.DeBruijnGraph.RemoveMarkedNodes] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.DeBruijnNode.#ctor(Bio.Algorithms.Kmer.KmerData32,System.Byte)] Missing &lt;param name=&quot;value&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.DeBruijnNode.#ctor(Bio.Algorithms.Kmer.KmerData32,System.Byte)] Missing &lt;param name=&quot;count&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.DeBruijnNode.IsPalindrome(System.Int32)] Missing &lt;param name=&quot;kmerLength&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.DeBruijnNode.MarkLeftExtensionAsInvalid(Bio.Algorithms.Assembly.Graph.DeBruijnNode)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.DeBruijnNode.MarkRightExtensionAsInvalid(Bio.Algorithms.Assembly.Graph.DeBruijnNode)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.Algorithms.Assembly.Graph.DeBruijnNode.ORIGINAL_SYMBOLS] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.Edge`1.#ctor(System.Int64)] Missing &lt;param name=&quot;id&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.Graph`2.DeleteEdge(System.Int64)] Missing &lt;param name=&quot;edgeId&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.Graph`2.GetEdge(System.Int64)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.Graph`2.GetEdge(System.Int64,System.Int64)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.Graph`2.GetEdges] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.Graph`2.GetVertex(System.Int64)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.Graph`2.GetVertices] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.KmerDictionary.GenerateNodeArray] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Graph.KmerDictionary.SetNewOrGetOld(Bio.Algorithms.Kmer.KmerData32)] Missing &lt;param name=&quot;value&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.Assembly.Padena] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.Assembly.Padena.Scaffold] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Padena.Scaffold.IDistanceCalculator.CalculateDistance] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Assembly.Padena.Scaffold.OrientationBasedMatePairFilter.FilterPairedReads(Bio.Algorithms.Assembly.Padena.Scaffold.ContigMatePairs,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.Assembly.Padena.Scaffold.ContigOverlapGraph] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.Kmer] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Kmer.KmerData32.GetFirstSymbol(System.Int32,System.Boolean)] Missing &lt;param name=&quot;kmerLength&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Kmer.KmerData32.GetFirstSymbol(System.Int32,System.Boolean)] Missing &lt;param name=&quot;orientation&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Kmer.KmerData32.GetKmers(Bio.ISequence,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Kmer.KmerData32.GetKmers(Bio.ISequence,System.Int32)] Missing &lt;param name=&quot;sequence&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Kmer.KmerData32.GetKmers(Bio.ISequence,System.Int32)] Missing &lt;param name=&quot;kmerLength&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Kmer.KmerData32.GetLastSymbol(System.Int32,System.Boolean)] Missing &lt;param name=&quot;kmerLength&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Kmer.KmerData32.GetLastSymbol(System.Int32,System.Boolean)] Missing &lt;param name=&quot;orientation&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Kmer.KmerData32.IsPalindrome(System.Int32)] Missing &lt;param name=&quot;kmerLength&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Kmer.KmerData32.SetKmerData(Bio.ISequence,System.Int64,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Algorithms.Kmer.KmerData32.SetKmerData(System.UInt64,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.MUMmer] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.MUMmer.LIS] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.StringSearch] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.SuffixTree] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Algorithms.Translation] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Core.Extensions] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Core.Extensions.ArrayExtensions.ConvertAll``2(``0[],System.Func{``0,``1})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Core.Extensions.ArrayExtensions.ConvertAll``2(``0[],System.Func{``0,``1})] Missing &lt;typeparam name=&quot;TOutput&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Core.Extensions.ArrayExtensions.ConvertAll``2(``0[],System.Func{``0,``1})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Core.Extensions.ArrayExtensions.ConvertAll``2(``0[],System.Func{``0,``1})] Missing &lt;param name=&quot;input&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Core.Extensions.ArrayExtensions.ConvertAll``2(``0[],System.Func{``0,``1})] Missing &lt;param name=&quot;converter&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Core.Extensions.ArrayExtensions.GetRange``1(``0[],System.Int32,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Distributions] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Distributions.BooleanStatistics.GetInstance(System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Distributions.BooleanStatistics.IsMissing] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Distributions.StatisticsList.AsStatisticsList] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Distributions.StatisticsList.AsStatisticsList] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Distributions.StatisticsList.GetInstance(Bio.Distributions.SufficientStatistics[])] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Distributions.SufficientStatistics.IsMissing] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Distributions.Converters] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Extensions] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.AlphabetExtensions.GetFriendlyName(Bio.IAlphabet,System.Char)] Missing &lt;param name=&quot;alphabet&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.AddRange``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.AddRange``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})] Missing &lt;param name=&quot;list&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.AddRange``1(System.Collections.Generic.IList{``0},System.Collections.Generic.IEnumerable{``0})] Missing &lt;param name=&quot;newItems&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.AsReadOnly``1(System.Collections.Generic.IList{``0})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.AsReadOnly``1(System.Collections.Generic.IList{``0})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.AsReadOnly``1(System.Collections.Generic.IList{``0})] Missing &lt;param name=&quot;input&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.ConvertAll``2(System.Collections.Generic.IList{``0},System.Func{``0,``1})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.ConvertAll``2(System.Collections.Generic.IList{``0},System.Func{``0,``1})] Missing &lt;typeparam name=&quot;TOutput&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.ConvertAll``2(System.Collections.Generic.IList{``0},System.Func{``0,``1})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.ConvertAll``2(System.Collections.Generic.IList{``0},System.Func{``0,``1})] Missing &lt;param name=&quot;input&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ListExtensions.ConvertAll``2(System.Collections.Generic.IList{``0},System.Func{``0,``1})] Missing &lt;param name=&quot;converter&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ReflectionExtensions.GetInterfaces(System.Type)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.ReflectionExtensions.GetInterfaces(System.Type)] Missing &lt;param name=&quot;t&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.SequenceExtensions.ConvertToString(Bio.ISequence,System.Int64,System.Int64)] Missing &lt;param name=&quot;sequence&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.SequenceExtensions.IsMarkedAsReverseComplement(Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.SequenceExtensions.IsMarkedAsReverseComplement(Bio.ISequence)] Missing &lt;param name=&quot;sequence&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.SequenceExtensions.MarkAsReverseComplement(Bio.ISequence)] Missing &lt;param name=&quot;sequence&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.StreamExtensions.OpenRead(System.IO.Stream,System.Text.Encoding,System.Boolean,System.Int32,System.Boolean)] Missing &lt;param name=&quot;detectEncodingFromByteOrderMarks&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.StringExtensions.Contains(System.String,System.Char)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.StringExtensions.Contains(System.String,System.Char)] Missing &lt;param name=&quot;text&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.StringExtensions.Contains(System.String,System.Char)] Missing &lt;param name=&quot;ch&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Extensions.StringExtensions.ToByteArray(System.String)] Missing &lt;param name=&quot;data&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Bio.IO.GZipParser`2] Missing &lt;typeparam name=&quot;TP&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Bio.IO.GZipParser`2] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GZipParser`2.CanProcessFile(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GZipParser`2.Parse(System.IO.Stream)] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Bio.IO.IParserWithAlphabet`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.ISequenceRangeFormatter.Format(System.IO.Stream,Bio.SequenceRangeGrouping)] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.ISequenceRangeFormatter.Format(System.IO.Stream,Bio.SequenceRangeGrouping)] Missing &lt;param name=&quot;rangeGroup&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.ISequenceRangeFormatter.Format(System.IO.Stream,System.Collections.Generic.IList{Bio.ISequenceRange})] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.ISequenceRangeFormatter.Format(System.IO.Stream,System.Collections.Generic.IList{Bio.ISequenceRange})] Missing &lt;param name=&quot;ranges&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.ISequenceRangeParser.ParseRange(System.IO.Stream)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.ISequenceRangeParser.ParseRange(System.IO.Stream)] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.ISequenceRangeParser.ParseRangeGrouping(System.IO.Stream)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.ISequenceRangeParser.ParseRangeGrouping(System.IO.Stream)] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SequenceFormatters.IsFasta(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SequenceFormatters.IsFastQ(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SequenceFormatters.IsGenBank(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SequenceParsers.IsFasta(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SequenceParsers.IsFastQ(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SequenceParsers.IsGenBank(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.AppliedBiosystems] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Ab1DirectoryEntry.#ctor(System.Byte[])] Missing &lt;param name=&quot;buffer&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Ab1Header.#ctor(System.IO.BinaryReader)] Missing &lt;param name=&quot;reader&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Ab1Parser.Parse(System.IO.BinaryReader)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Ab1Parser.Parse(System.IO.BinaryReader)] Missing &lt;param name=&quot;reader&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Ab1Parser.Parse(System.IO.BinaryReader,Bio.IAlphabet)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Ab1Parser.Parse(System.IO.BinaryReader,Bio.IAlphabet)] Missing &lt;param name=&quot;reader&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Ab1Parser.Parse(System.IO.BinaryReader,Bio.IAlphabet)] Missing &lt;param name=&quot;alphabet&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Ab1Parser.Parse(System.IO.Stream)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Ab1Parser.Parse(System.IO.Stream)] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.AppliedBiosystems.DataParsers] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.DataParserFactory.GetParser(System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.DataParserFactory.GetParser(System.Int32)] Missing &lt;param name=&quot;majorVersion&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.IVersionedDataParser.ParseData(Bio.IO.AppliedBiosystems.DataParsers.IParserContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.ConvertSegmentsToArray``2(``0[][],System.Func{``0[],``1})] Missing &lt;typeparam name=&quot;TIn&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.ConvertSegmentsToArray``2(``0[][],System.Func{``0[],``1})] Missing &lt;typeparam name=&quot;TOut&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.ConvertSegmentsToArray``2(``0[][],System.Func{``0[],``1})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.ConvertSegmentsToArray``2(``0[][],System.Func{``0[],``1})] Missing &lt;param name=&quot;segments&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.ConvertSegmentsToArray``2(``0[][],System.Func{``0[],``1})] Missing &lt;param name=&quot;convert&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.SegmentArray``1(``0[],System.Int32,System.Boolean)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.SegmentArray``1(``0[],System.Int32,System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.SegmentArray``1(``0[],System.Int32,System.Boolean)] Missing &lt;param name=&quot;values&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.SegmentArray``1(``0[],System.Int32,System.Boolean)] Missing &lt;param name=&quot;count&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.ToArray``1(System.String,System.Func{System.String,``0})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.ToArray``1(System.String,System.Func{System.String,``0})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.ToArray``1(System.String,System.Func{System.String,``0})] Missing &lt;param name=&quot;value&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.ParserHelper.ToArray``1(System.String,System.Func{System.String,``0})] Missing &lt;param name=&quot;parse&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.ParseData(Bio.IO.AppliedBiosystems.DataParsers.IParserContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.BoolDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.ByteDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.CharDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.CStringDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.DateDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.DoubleDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.FloatDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.LongDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.PStringDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.ShortDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.ThumbDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.TimeDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.UserDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataParsers.V1DataParser.Visit(Bio.IO.AppliedBiosystems.DataTypes.WordDataItem)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.AppliedBiosystems.DataTypes] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.BoolDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.BoolDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.ByteDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.ByteDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.CharDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.CharDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.CStringDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.CStringDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.DataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.DataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.DataItemFactory.TryCreateDataItem(Bio.IO.AppliedBiosystems.Ab1DirectoryEntry)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.DataItemFactory.TryCreateDataItem(Bio.IO.AppliedBiosystems.Ab1DirectoryEntry)] Missing &lt;param name=&quot;entry&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.DateDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.DateDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.DoubleDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.DoubleDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.FloatDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.FloatDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.IAb1DataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.IAb1DataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.LongDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.LongDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.PStringDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.PStringDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.ShortDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.ShortDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.ThumbDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.ThumbDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.TimeDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.TimeDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.UserDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.UserDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.WordDataItem.Accept(Bio.IO.AppliedBiosystems.DataParsers.IAb1DataVisitor)] Missing &lt;param name=&quot;visitor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.DataTypes.WordDataItem.Create] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.AppliedBiosystems.Exceptions] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidFileSignatureException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidFileSignatureException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidFileSignatureException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidFileSignatureException.#ctor(System.String,System.String)] Missing &lt;param name=&quot;signature&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidFileSignatureException.#ctor(System.String,System.String)] Missing &lt;param name=&quot;expected&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidFileVersionException.#ctor(System.Int32,System.Int32)] Missing &lt;param name=&quot;expected&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidFileVersionException.#ctor(System.Int32,System.Int32)] Missing &lt;param name=&quot;actual&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidFileVersionException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidFileVersionException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidFileVersionException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidItemSizeException.#ctor(System.Int32,System.Int32,System.String)] Missing &lt;param name=&quot;expected&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidItemSizeException.#ctor(System.Int32,System.Int32,System.String)] Missing &lt;param name=&quot;actual&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidItemSizeException.#ctor(System.Int32,System.Int32,System.String)] Missing &lt;param name=&quot;name&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidItemSizeException.#ctor(System.String)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidItemSizeException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Exceptions.InvalidItemSizeException.#ctor(System.String,System.Exception)] Missing &lt;param name=&quot;innerException&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.AppliedBiosystems.Model] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1ColorData.FromByteArray(System.Byte[])] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1ColorData.FromByteArray(System.Byte[])] Missing &lt;param name=&quot;value&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1ColorData.ToString(System.Collections.Generic.List{System.Int16})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1ColorData.ToString(System.Collections.Generic.List{System.Int16})] Missing &lt;param name=&quot;data&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1ContextToSequenceConverter.Convert(Bio.IO.AppliedBiosystems.DataParsers.IParserContext)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1ContextToSequenceConverter.Convert(Bio.IO.AppliedBiosystems.DataParsers.IParserContext)] Missing &lt;param name=&quot;context&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1Metadata.AllColorData] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1Metadata.SetAb1Data(Bio.ISequence,Bio.IO.AppliedBiosystems.Model.Ab1Metadata)] Missing &lt;param name=&quot;sequence&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1Metadata.SetAb1Data(Bio.ISequence,Bio.IO.AppliedBiosystems.Model.Ab1Metadata)] Missing &lt;param name=&quot;metadata&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1Metadata.SetColorData(System.Byte,Bio.IO.AppliedBiosystems.Model.Ab1ColorData)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1Metadata.SetColorData(System.Byte,Bio.IO.AppliedBiosystems.Model.Ab1ColorData)] Missing &lt;param name=&quot;data&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1Metadata.TryGetAb1Data(Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.AppliedBiosystems.Model.Ab1Metadata.TryGetAb1Data(Bio.ISequence)] Missing &lt;param name=&quot;sequence&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.BAM] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.BAMIndexStorage.Read] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.BAMParser.GetAlignedSequence(System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.BAMParser.GetHeader(System.IO.Stream)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.BAMParser.GetIndexFromBAMStorage(System.IO.Stream)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.BAMReferenceIndexes.#ctor(System.Int32)] Missing &lt;param name=&quot;refSequenceLength&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.ChunkSorterForMerging.Compare(Bio.IO.BAM.Chunk,Bio.IO.BAM.Chunk)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.ChunkSorterForMerging.GetInstance] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.FileOffset.#ctor(System.UInt64,System.UInt16)] Missing &lt;param name=&quot;compressedStreamPosition&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.FileOffset.#ctor(System.UInt64,System.UInt16)] Missing &lt;param name=&quot;decompressedStreamPosition&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.FileOffset.CompareTo(Bio.IO.BAM.FileOffset)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.FileOffset.GetHashCode] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.FileOffset.op_Equality(Bio.IO.BAM.FileOffset,Bio.IO.BAM.FileOffset)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.FileOffset.op_GreaterThan(Bio.IO.BAM.FileOffset,Bio.IO.BAM.FileOffset)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.FileOffset.op_GreaterThanOrEqual(Bio.IO.BAM.FileOffset,Bio.IO.BAM.FileOffset)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.FileOffset.op_Inequality(Bio.IO.BAM.FileOffset,Bio.IO.BAM.FileOffset)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.FileOffset.op_LessThan(Bio.IO.BAM.FileOffset,Bio.IO.BAM.FileOffset)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.FileOffset.op_LessThanOrEqual(Bio.IO.BAM.FileOffset,Bio.IO.BAM.FileOffset)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.#ctor(System.String)] Missing &lt;param name=&quot;validationRegEx&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.#ctor(System.Text.RegularExpressions.Regex)] Missing &lt;param name=&quot;validationRegEx&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Add(System.String)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Add(System.String)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Clear] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Contains(System.String)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Contains(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Contains(System.String)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.CopyTo(System.String[],System.Int32)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.CopyTo(System.String[],System.Int32)] Missing &lt;param name=&quot;array&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.CopyTo(System.String[],System.Int32)] Missing &lt;param name=&quot;arrayIndex&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.IO.BAM.RegexValidatedStringList.Count] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.GetEnumerator] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.GetEnumerator] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.IndexOf(System.String)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.IndexOf(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.IndexOf(System.String)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Insert(System.Int32,System.String)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Insert(System.Int32,System.String)] Missing &lt;param name=&quot;index&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Insert(System.Int32,System.String)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.IO.BAM.RegexValidatedStringList.IsReadOnly] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.IO.BAM.RegexValidatedStringList.Item(System.Int32)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Remove(System.String)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Remove(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.Remove(System.String)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.RemoveAt(System.Int32)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.RemoveAt(System.Int32)] Missing &lt;param name=&quot;index&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.ValidateItem(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.BAM.RegexValidatedStringList.ValidateItem(System.String)] Missing &lt;param name=&quot;toAdd&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.Bed] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.ClustalW] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.FastA] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.FastQ] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.GenBank] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.CodingSequence.GetTranslation] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.FeatureItem.GetSubFeatures(Bio.IO.GenBank.SequenceFeatures)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.FeatureItem.GetSubSequence(Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.FeatureItem.GetSubSequence(Bio.ISequence,System.Collections.Generic.Dictionary{System.String,Bio.ISequence})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.GenBankMetadata.GetCitationsReferredInFeature(Bio.IO.GenBank.FeatureItem)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.GenBankMetadata.GetCitationsReferredInFeatures] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.GenBankMetadata.GetFeatures(System.Int32,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.GenBankMetadata.GetFeatures(System.String,System.Int32,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.GenBankParser.Parse(System.IO.Stream)] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocation.GetLeafLocations] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocation.GetSubSequence(Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocation.GetSubSequence(Bio.ISequence,System.Collections.Generic.Dictionary{System.String,Bio.ISequence})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocation.IsInEnd(System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocation.IsInRange(System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocation.IsInStart(System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocationBuilder.GetLocation(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocationBuilder.GetLocationString(Bio.IO.GenBank.ILocation)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocationResolver.GetEnd(Bio.IO.GenBank.ILocation)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocationResolver.GetStart(Bio.IO.GenBank.ILocation)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocationResolver.GetSubSequence(Bio.IO.GenBank.ILocation,Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.ILocationResolver.GetSubSequence(Bio.IO.GenBank.ILocation,Bio.ISequence,System.Collections.Generic.Dictionary{System.String,Bio.ISequence})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.Location.GetLeafLocations] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.Location.GetSubSequence(Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.Location.GetSubSequence(Bio.ISequence,System.Collections.Generic.Dictionary{System.String,Bio.ISequence})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.Location.IsInEnd(System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.Location.IsInRange(System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.Location.IsInStart(System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.LocationBuilder.GetLocation(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.LocationBuilder.GetLocationString(Bio.IO.GenBank.ILocation)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.LocationResolver.Clone] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.LocationResolver.GetEnd(Bio.IO.GenBank.ILocation)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.LocationResolver.GetStart(Bio.IO.GenBank.ILocation)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.LocationResolver.GetSubSequence(Bio.IO.GenBank.ILocation,Bio.ISequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.GenBank.LocationResolver.GetSubSequence(Bio.IO.GenBank.ILocation,Bio.ISequence,System.Collections.Generic.Dictionary{System.String,Bio.ISequence})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.Gff] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.Gff.GffParser.Parse(System.IO.Stream)] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.Newick] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.Nexus] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.Phylip] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.SAM] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetInsertLength(Bio.IO.SAM.SAMAlignedSequence,Bio.IO.SAM.SAMAlignedSequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetInsertLength(Bio.IO.SAM.SAMAlignedSequence,Bio.IO.SAM.SAMAlignedSequence,System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetPairedReadType(Bio.IO.SAM.PairedRead,Bio.CloneLibraryInformation)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetPairedReadType(Bio.IO.SAM.PairedRead,Bio.CloneLibraryInformation,System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetPairedReadType(Bio.IO.SAM.PairedRead,System.Single,System.Single)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetPairedReadType(Bio.IO.SAM.PairedRead,System.Single,System.Single,System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetPairedReadType(Bio.IO.SAM.PairedRead,System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetPairedReadType(Bio.IO.SAM.PairedRead,System.String,System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetPairedReadType(Bio.IO.SAM.SAMAlignedSequence,Bio.IO.SAM.SAMAlignedSequence,Bio.CloneLibraryInformation)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetPairedReadType(Bio.IO.SAM.SAMAlignedSequence,Bio.IO.SAM.SAMAlignedSequence,System.Single,System.Single)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.GetPairedReadType(Bio.IO.SAM.SAMAlignedSequence,Bio.IO.SAM.SAMAlignedSequence,System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.IsForwardRead(Bio.IO.SAM.SAMAlignedSequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.PairedRead.IsReverseRead(Bio.IO.SAM.SAMAlignedSequence)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.ReferenceSequenceInfo.#ctor(System.String,System.Int64)] Missing &lt;param name=&quot;name&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.ReferenceSequenceInfo.#ctor(System.String,System.Int64)] Missing &lt;param name=&quot;length&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequence.#ctor(Bio.IO.SAM.SAMAlignedSequenceHeader)] Missing &lt;param name=&quot;seqHeader&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequence.GetEncodedQualityScores] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequence.GetQualityScores] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequence.SetPreValidatedCIGAR(System.String)] Missing &lt;param name=&quot;value&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequence.SetPreValidatedMRNM(System.String)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequence.SetPreValidatedRName(System.String)] Missing &lt;param name=&quot;name&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequenceHeader.GetFlag(System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequenceHeader.GetFlag(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequenceHeader.RegionToBin(System.Int32,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequenceHeader.SetPreValidatedCIGAR(System.String)] Missing &lt;param name=&quot;value&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequenceHeader.SetPreValidatedMRNM(System.String)] Missing &lt;param name=&quot;value&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignedSequenceHeader.SetPreValidatedRName(System.String)] Missing &lt;param name=&quot;rName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignmentHeader.GetReferenceSequenceRanges] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMAlignmentHeader.GetReferenceSequencesInfoFromSQHeader] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMParser.ParseSAMHeader(System.IO.Stream)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMParser.ParseSAMHeader(System.IO.TextReader)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SAMParser.ParseSequence(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SequenceAlignmentMap.GetReferenceSequenceRanges] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.SAM.SequenceAlignmentMap.GetRefSequences] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.SFF] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.Snp] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.Snp.SimpleSnpParser.#ctor(Bio.IAlphabet)] Missing &lt;param name=&quot;alphabet&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.Text] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.Wiggle] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.IO.Xsv] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.Xsv.XsvContigParser.ParseContig(System.IO.Stream)] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.Xsv.XsvSparseParser.Parse(System.IO.Stream)] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.IO.Xsv.XsvSparseParser.ParseOne(System.IO.Stream)] Missing &lt;param name=&quot;stream&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Phylogenetics] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Registration] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.SimilarityMatrices] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Bio.SimilarityMatrices.SimilarityMatrix.supportedAlphabets] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Util] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.ComparisonWrapper`1.Compare(`0,`0)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DeltaAlignmentCollection.GetDeltaAlignmentFor(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DeltaAlignmentCollection.GetDeltaAlignmentsByReads] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DeltaAlignmentParser.GetPositions] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DeltaAlignmentParser.GetQuerySeqIdAt(System.Int64)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DeltaAlignmentParser.GetQuerySeqIds] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.AsRestrictedAccessDictionary``2(System.Collections.Generic.IDictionary{``0,``1})] Missing &lt;typeparam name=&quot;TKey&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.AsRestrictedAccessDictionary``2(System.Collections.Generic.IDictionary{``0,``1})] Missing &lt;typeparam name=&quot;TValue&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.AsRestrictedAccessDictionary``2(System.Collections.Generic.IDictionary{``0,``1})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.AsRestrictedAccessDictionary``2(System.Collections.Generic.IDictionary{``0,``1})] Missing &lt;param name=&quot;dictionary&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.AsRestrictedAccessDictionary``2(System.Collections.Generic.IDictionary{``0,``1},Bio.Util.AccessFlags)] Missing &lt;typeparam name=&quot;TKey&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.AsRestrictedAccessDictionary``2(System.Collections.Generic.IDictionary{``0,``1},Bio.Util.AccessFlags)] Missing &lt;typeparam name=&quot;TValue&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.AsRestrictedAccessDictionary``2(System.Collections.Generic.IDictionary{``0,``1},Bio.Util.AccessFlags)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.AsRestrictedAccessDictionary``2(System.Collections.Generic.IDictionary{``0,``1},Bio.Util.AccessFlags)] Missing &lt;param name=&quot;dictionary&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.AsRestrictedAccessDictionary``2(System.Collections.Generic.IDictionary{``0,``1},Bio.Util.AccessFlags)] Missing &lt;param name=&quot;flags&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)] Missing &lt;typeparam name=&quot;TKey&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)] Missing &lt;typeparam name=&quot;TValue&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)] Missing &lt;param name=&quot;dictionary&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)] Missing &lt;param name=&quot;key&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Boolean)] Missing &lt;param name=&quot;insertIfMissing&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1},System.Boolean)] Missing &lt;typeparam name=&quot;TKey&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1},System.Boolean)] Missing &lt;typeparam name=&quot;TValue&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1},System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1},System.Boolean)] Missing &lt;param name=&quot;dictionary&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1},System.Boolean)] Missing &lt;param name=&quot;key&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1},System.Boolean)] Missing &lt;param name=&quot;defaultValueConstructor&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,System.Func{``1},System.Boolean)] Missing &lt;param name=&quot;insertIfMissing&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)] Missing &lt;typeparam name=&quot;TKey&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)] Missing &lt;typeparam name=&quot;TValue&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)] Missing &lt;param name=&quot;dictionary&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)] Missing &lt;param name=&quot;key&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1)] Missing &lt;param name=&quot;defaultValue&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Boolean)] Missing &lt;typeparam name=&quot;TKey&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Boolean)] Missing &lt;typeparam name=&quot;TValue&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Boolean)] Missing &lt;param name=&quot;dictionary&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Boolean)] Missing &lt;param name=&quot;key&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Boolean)] Missing &lt;param name=&quot;defaultValue&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.GetValueOrDefault``2(System.Collections.Generic.IDictionary{``0,``1},``0,``1,System.Boolean)] Missing &lt;param name=&quot;insertIfMissing&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.Invert``2(System.Collections.Generic.IDictionary{``0,``1})] Missing &lt;typeparam name=&quot;TKey&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.Invert``2(System.Collections.Generic.IDictionary{``0,``1})] Missing &lt;typeparam name=&quot;TValue&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.Invert``2(System.Collections.Generic.IDictionary{``0,``1})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.DictionaryExtensions.Invert``2(System.Collections.Generic.IDictionary{``0,``1})] Missing &lt;param name=&quot;dict&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.BigMul(System.Int32,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.BigMul(System.Int32,System.Int32)] Missing &lt;param name=&quot;a&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.BigMul(System.Int32,System.Int32)] Missing &lt;param name=&quot;b&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.CheckCondition``1(System.Boolean,System.Func{System.String})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GenerateAlphabetCheckFailureException(Bio.IAlphabet,System.Byte[])] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GenerateAlphabetCheckFailureException(Bio.IAlphabet,System.Byte[])] Missing &lt;param name=&quot;alphabet&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GenerateAlphabetCheckFailureException(Bio.IAlphabet,System.Byte[])] Missing &lt;param name=&quot;data&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetHexString(System.Byte[],System.Int32,System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetInt16(System.Byte[],System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetInt32(System.Byte[],System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetLittleEndianByteArray(System.Int16)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetLittleEndianByteArray(System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetLittleEndianByteArray(System.Single)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetLittleEndianByteArray(System.UInt16)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetLittleEndianByteArray(System.UInt32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetMatePairedReadType(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetPairedReadId(System.String,System.String,System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetReadIdExcludingOtherInfo(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetSingle(System.Byte[],System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetString(Bio.Algorithms.Alignment.DeltaAlignment)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetUInt16(System.Byte[],System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetUInt32(System.Byte[],System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.GetUInt64(System.Byte[],System.Int32)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.IsBAM(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.IsFasta(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.IsFastQ(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.IsGenBank(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.IsZippedFasta(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.IsZippedFastQ(System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.IsZippedFastQ(System.String)] Missing &lt;param name=&quot;fileName&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.StringContainsIllegalCharacters(System.String,System.Char[])] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.StringContainsIllegalCharacters(System.String,System.Char[])] Missing &lt;param name=&quot;toTest&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.StringContainsIllegalCharacters(System.String,System.Char[])] Missing &lt;param name=&quot;illegalCharacters&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.Helper.ValidatePairedSequenceId(System.String,System.String@,System.Boolean@,System.String@,System.String@)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}[])] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}[])] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}[])] Missing &lt;param name=&quot;enumerable&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0}[])] Missing &lt;param name=&quot;enumerables&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},``0)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},``0)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},``0)] Missing &lt;param name=&quot;enumerable&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Append``1(System.Collections.Generic.IEnumerable{``0},``0)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.AsSingletonEnumerable``1(``0)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.AsSingletonEnumerable``1(``0)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.AsSingletonEnumerable``1(``0)] Missing &lt;param name=&quot;obj&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.First``1(System.Collections.Generic.IList{``0})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.First``1(System.Collections.Generic.IList{``0})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.First``1(System.Collections.Generic.IList{``0})] Missing &lt;param name=&quot;list&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Last``1(System.Collections.Generic.IList{``0})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Last``1(System.Collections.Generic.IList{``0})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Last``1(System.Collections.Generic.IList{``0})] Missing &lt;param name=&quot;list&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Single``1(System.Collections.Generic.IList{``0})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Single``1(System.Collections.Generic.IList{``0})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.IEnumerableExtensions.Single``1(System.Collections.Generic.IList{``0})] Missing &lt;param name=&quot;list&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.PrimitiveExtensions.Enforce``1(System.Boolean)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.PrimitiveExtensions.Enforce``1(System.Boolean,System.String)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.PrimitiveExtensions.Enforce``1(System.Boolean,System.String,System.Object[])] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.#ctor(System.Int64)] Missing &lt;param name=&quot;singleItem&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.Complement(System.Int64,System.Int64)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.Complement(System.Int64,System.Int64)] Missing &lt;param name=&quot;fullRangeBegin&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.Complement(System.Int64,System.Int64)] Missing &lt;param name=&quot;fullRangeLast&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.Contains(System.Int64)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.Contains(System.Int64)] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.ElementAt(System.Int64)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.ElementsAt(Bio.Util.RangeCollection)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.ExceptWith(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.ExceptWith(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.GetEnumerator] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.GetHashCode] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.GetSchema] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IntersectWith(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IntersectWith(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsProperSubsetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsProperSubsetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsProperSubsetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsProperSupersetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsProperSupersetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsProperSupersetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsSubsetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsSubsetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsSubsetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsSupersetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsSupersetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.IsSupersetOf(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.Overlaps(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.Overlaps(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.Overlaps(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.ReadXml(System.Xml.XmlReader)] Missing &lt;param name=&quot;reader&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.SetEquals(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.SetEquals(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.SetEquals(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.SymmetricExceptWith(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.SymmetricExceptWith(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.UnionWith(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.UnionWith(System.Collections.Generic.IEnumerable{System.Int64})] Missing &lt;param name=&quot;other&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RangeCollection.WriteXml(System.Xml.XmlWriter)] Missing &lt;param name=&quot;writer&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Add(System.Collections.Generic.KeyValuePair{`0,`1})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Add(System.Collections.Generic.KeyValuePair{`0,`1})] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Add(`0,`1)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Add(`0,`1)] Missing &lt;param name=&quot;key&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Add(`0,`1)] Missing &lt;param name=&quot;value&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Clear] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})] Missing &lt;param name=&quot;item&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.ContainsKey(`0)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.ContainsKey(`0)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.ContainsKey(`0)] Missing &lt;param name=&quot;key&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)] Missing &lt;param name=&quot;array&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)] Missing &lt;param name=&quot;arrayIndex&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.Util.RestrictedAccessDictionary`2.Count] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.Util.RestrictedAccessDictionary`2.IsReadOnly] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.Util.RestrictedAccessDictionary`2.Item(`0)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.Util.RestrictedAccessDictionary`2.Keys] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Remove(`0)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Remove(`0)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.Remove(`0)] Missing &lt;param name=&quot;key&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.TryGetValue(`0,`1@)] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.TryGetValue(`0,`1@)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.TryGetValue(`0,`1@)] Missing &lt;param name=&quot;key&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.RestrictedAccessDictionary`2.TryGetValue(`0,`1@)] Missing &lt;param name=&quot;value&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Bio.Util.RestrictedAccessDictionary`2.Values] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Bio.Util.SerialNumbers`1] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.SerialNumbers`1.#ctor(System.Collections.Generic.IEnumerable{`0})] Missing &lt;param name=&quot;sequence&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.SerialNumbers`1.Save(System.IO.TextWriter)] Missing &lt;param name=&quot;writer&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair.Create``1(``0,``0)] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair.Create``1(``0,``0)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair.Create``1(``0,``0)] Missing &lt;param name=&quot;t1&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair.Create``1(``0,``0)] Missing &lt;param name=&quot;t2&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.CompareTo(Bio.Util.UOPair{`0})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.Equals(System.Object)] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.Equals(System.Object)] Missing &lt;param name=&quot;obj&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.GetHashCode] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_Equality(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_Equality(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_Equality(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;param name=&quot;uo1&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_Equality(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;param name=&quot;uo2&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_GreaterThan(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_GreaterThan(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_GreaterThan(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;param name=&quot;uo1&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_GreaterThan(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;param name=&quot;uo2&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_Inequality(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_Inequality(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_Inequality(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;param name=&quot;uo1&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_Inequality(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;param name=&quot;uo2&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_LessThan(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_LessThan(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_LessThan(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;param name=&quot;uo1&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.op_LessThan(Bio.Util.UOPair{`0},Bio.Util.UOPair{`0})] Missing &lt;param name=&quot;uo2&quot;/&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Bio.Util.UOPair`1.ToString] Missing &lt;returns&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [N:Bio.Util.Logging] Missing &lt;summary&gt; documentation [C:\git\bio\src\Help\Working\BuildReferenceTopics.proj]
+  Processed 5015 topic(s)
+  649 warning(s)
+  CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 11 of 15.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 3 of 30.
+Done Building Project &quot;C:\git\bio\src\Help\Working\BuildReferenceTopics.proj&quot; (default targets).
+
+Build succeeded.
+
+Time Elapsed 00:00:30.20
+    Last step completed in 00:00:30.5988
+</buildStep>
+<buildStep step="CombiningIntermediateTocFiles">
+Combining conceptual and API intermediate TOC files...
+    Last step completed in 00:00:00.0230
+</buildStep>
+<buildStep step="ExtractingHtmlInfo">
+Extracting HTML info for HTML Help 1 and/or website...
+[C:\windows\Microsoft.NET\Framework64\v4.0.30319\MSBuild.exe - ExtractHtmlInfo.proj]
+Sandcastle Help File Builder and Tools, version 2015.7.25.0
+Copyright c 2006-2015, Eric Woodruff, All Rights Reserved
+E-Mail: Eric@EWoodruff.us
+
+Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
+
+Processing website files in C:\git\bio\src\Help\Working\Output\Website
+Processed 5015 HTML files
+Sorting keywords and generating See Also indices
+Saving website keyword index to C:\git\bio\src\Help\Working\WebKI.xml
+Saving website table of contents to C:\git\bio\src\Help\Working\WebTOC.xml
+    Last step completed in 00:00:06.6854
+</buildStep>
+<buildStep step="CopyStandardHelpContent">
+Copying standard help content...
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertCaution.png -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\AlertCaution.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertNote.png -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\AlertNote.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\AlertSecurity.png -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\AlertSecurity.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CFW.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\CFW.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\CodeExample.png -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\CodeExample.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\favicon.ico
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privclass.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\privclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privdelegate.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\privdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privenumeration.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\privenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privevent.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\privevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\privextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privfield.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\privfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privinterface.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\privinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privmethod.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\privmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privproperty.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\privproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privstructure.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\privstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protclass.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protdelegate.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protenumeration.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protevent.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protfield.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protinterface.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protmethod.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protoperator.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protoperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protproperty.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protstructure.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\protstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubclass.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\pubclass.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubdelegate.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\pubdelegate.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubenumeration.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\pubenumeration.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubevent.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\pubevent.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubextension.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\pubextension.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubfield.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\pubfield.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubinterface.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\pubinterface.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubmethod.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\pubmethod.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\puboperator.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\puboperator.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubproperty.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\pubproperty.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\pubstructure.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\pubstructure.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\SectionCollapsed.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionExpanded.png -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\SectionExpanded.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\slMobile.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\slMobile.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\static.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\static.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\xna.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\xna.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\scripts\branding.js -&gt; C:\git\bio\src\Help\Working\Output\Website\scripts\branding.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-cs-CZ.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-cs-CZ.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-de-DE.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-de-DE.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-en-US.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-en-US.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-es-ES.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-es-ES.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-fr-FR.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-fr-FR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Help1.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-Help1.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-HelpViewer.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-HelpViewer.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-it-IT.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-it-IT.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ja-JP.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-ja-JP.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ko-KR.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-ko-KR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pl-PL.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-pl-PL.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-pt-BR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-ru-RU.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-tr-TR.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-Website.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-zh-CN.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding-zh-TW.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding.css -&gt; C:\git\bio\src\Help\Working\Output\Website\styles\branding.css
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; C:\git\bio\src\Help\Working\Output\Website\index.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\search.html -&gt; C:\git\bio\src\Help\Working\Output\Website\search.html
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.aspx -&gt; C:\git\bio\src\Help\Working\Output\Website\SearchHelp.aspx
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.inc.php -&gt; C:\git\bio\src\Help\Working\Output\Website\SearchHelp.inc.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\SearchHelp.php -&gt; C:\git\bio\src\Help\Working\Output\Website\SearchHelp.php
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; C:\git\bio\src\Help\Working\Output\Website\Web.Config
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\Search.png -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\Search.png
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\TocClose.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\TocCollapsed.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\TocExpanded.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; C:\git\bio\src\Help\Working\Output\Website\icons\TocOpen.gif
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; C:\git\bio\src\Help\Working\Output\Website\scripts\branding-Website.js
+C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; C:\git\bio\src\Help\Working\Output\Website\scripts\jquery-1.11.0.min.js
+    Last step completed in 00:00:00.1040
+</buildStep>
+<buildStep step="GenerateHelpFormatTableOfContents">
+Generating website table of contents file...
+    Last step completed in 00:00:00.0000
+</buildStep>
+<buildStep step="GenerateFullTextIndex">
+Generating full-text index for the website...
+
+<plugIn name="Lightweight Website Style" behavior="After" priority="1000">
+Adding lightweight search and TOC elements to each topic...
+</plugIn>    Last step completed in 00:00:16.3589
+</buildStep>
+<buildStep step="CopyingWebsiteFiles">
+Copying website files to output folder...
+
+Copied 500 files
+Copied 1000 files
+Copied 1500 files
+Copied 2000 files
+Copied 2500 files
+Copied 3000 files
+Copied 3500 files
+Copied 4000 files
+Copied 4500 files
+Copied 5000 files
+Copied 5500 files
+Copied 6000 files
+Copied 6427 files for the website content
+    Last step completed in 00:00:08.4915
+</buildStep>
+<buildStep step="CleanIntermediates">
+Removing intermediate files...
+    Last step completed in 00:00:00.7690
+</buildStep>
+<buildStep step="Completed">
+
+Build completed successfully at 8/2/2015 6:03:31 PM.  Total time: 00:01:13.1622
+
+</buildStep>
+</shfbBuild>
