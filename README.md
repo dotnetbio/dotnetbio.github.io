@@ -7,6 +7,6 @@ These pages are a work in progress while we continue the migration from [CodePle
         
 - [Cookbook](./Cookbook.md)
 - [Getting Started](https://bio.codeplex.com/documentation)
-- [API documention](./Help/index.html)
+- [API documention](http://dotnetbio.github.io/Help/index.html)
 
 
