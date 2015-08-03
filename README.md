@@ -5,8 +5,8 @@
 
 These pages are a work in progress while we continue the migration from [CodePlex](https://bio.codeplex.com) to Github.
         
-- [Cookbook](cookbook.md)
+- [Cookbook](./Cookbook.md)
 - [Getting Started](https://bio.codeplex.com/documentation)
-- [API documention](http://github.com/dotnetbio/docs/Help/index.html)
+- [API documention](./Help/index.html)
 
 
