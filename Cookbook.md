@@ -106,7 +106,7 @@ To execute a BLAST search request to NCBI, you use an `IBlastWebHandler`. This r
 Assuming you have a sequence, or a set of sequences you want to look for you can execute the following code:
 
 ```C#
-async List<BlastResult> DoBlast(IEnumerable<ISequence sequences)
+async List<BlastResult> DoBlast(IEnumerable<ISequence> sequences)
 {
    // Setup the Blast Request parameters. Must select the database and program.
    // Can have other parameters if necessary (such as email).
